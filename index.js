@@ -11,7 +11,7 @@ const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/product-da
 
 // Middleware
 app.use(cors({
-    origin: ['http://localhost:3000', 'https://product-dashboard-azure.vercel.app/'],
+    origin: ['http://localhost:3000', 'https://product-dashboard-azure.vercel.app'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization'],
 }));
